@@ -1,0 +1,53 @@
+{
+  "mapFile": "map.pcd",
+  "generatedAt": "2026-06-01T13:20:09.869Z",
+  "config": {
+    "onlyWalkingPlaneNumber": 2,
+    "floorDistanceThreshold": 0.05,
+    "planeDetectionSeed": 12345
+  },
+  "planesDetected": 8,
+  "layoutCentroid_C": {
+    "x": -3.327118,
+    "y": -1.38162,
+    "z": 0.360559
+  },
+  "sceneRotation": {
+    "quaternion": {
+      "x": -0.026821,
+      "y": -0.706183,
+      "z": -0.707472,
+      "w": 0.008343
+    },
+    "eulerRadXYZ": {
+      "x": -1.569624,
+      "y": 0.02617,
+      "z": -3.091869
+    },
+    "matrix3x3_rowMajor": [
+      -0.998422,
+      0.026076,
+      0.049734,
+      0.049686,
+      -0.002472,
+      0.998762,
+      0.026167,
+      0.999657,
+      0.001172
+    ],
+    "flippedUpsideDown": false
+  },
+  "currentFloorD": 1.23138,
+  "floorPointCount": 1045778,
+  "obstaclePointCount": 9499798,
+  "formulas": {
+    "rawToCanonical": "P_can = P_raw - C",
+    "canonicalToWorld": "P_world = R * P_can",
+    "rawToWorld": "P_world = R * (P_raw - C)",
+    "hardwareFromRaw": {
+      "robot_x": "P_can.x",
+      "robot_y": "P_can.y (可固定常数，前端贴地用点云)",
+      "robot_z": "P_can.z"
+    }
+  }
+}
